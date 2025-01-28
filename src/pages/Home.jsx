@@ -64,14 +64,12 @@ function Home() {
 
 
 return (
-  <div className="text-center">
-    <h1 className="text-4xl font-bold mb-8">Welcome to PQ-ACE</h1>
-    <p className="text-xl mb-8">
-      A space where students can share resources to enhance their learning and prepare for exams, tests, and quizzes.
-    </p>
-    <p className="text-lg mb-4">
-      Past questions are one of the best ways to practice and prepare effectively!
-    </p>
+<div className="text-center bg-gradient-to-r from-blue-500 to-purple-600 min-h-screen flex flex-col items-center justify-center text-white">
+      <h1 className="text-5xl font-bold mb-4">Welcome to PQ-ACE</h1>
+      <p className="text-xl mb-4">Where Past Questions Meet Future Success.</p>
+      <p className="text-lg mb-8">
+        A space where students can share resources to enhance their learning and prepare for exams, tests, and quizzes.
+      </p>
     {!user && (
       <button
         onClick={loginWithGoogle}
@@ -80,7 +78,7 @@ return (
         Get Started
       </button> 
     )}
-    <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
       <FeatureCard
         title="Share Resources"
         description="Upload and share past questions and study materials with your peers."
@@ -101,9 +99,9 @@ return (
 
 function FeatureCard({ title, description }) {
   return (
-    <div className="p-6 bg-white rounded-lg shadow-md">
-      <h3 className="text-xl font-semibold mb-4">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+    <div className="bg-gray-200 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
+      <h3 className="text-xl font-semibold mb-2 text-blue-600">{title}</h3>
+      <p className="text-gray-700">{description}</p>
     </div>
   );
 }
