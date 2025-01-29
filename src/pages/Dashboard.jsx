@@ -164,7 +164,7 @@ import { auth } from '../lib/firebase/config';
 import PastQuestionUpload from '../components/PastQuestionUpload';
 import PastQuestionCard from '../components/PastQuestionCard';
 
-function Dashboard() {
+function Dashboard() { 
   const [pastQuestions, setPastQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
