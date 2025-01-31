@@ -215,7 +215,7 @@ function Dashboard() {
         Upload New Past Question
       </button>
 
-      <div className="space-y-6 mt-6">
+      <div className="space-y-6 mt-6"> 
         <h2 className="text-xl font-semibold mb-4">My Past Questions</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {pastQuestions.map((question) => (
